@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--primary-dark);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-link {
+    color: var(--primary-light);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.accent {
+    color: var(--primary-green);
+}

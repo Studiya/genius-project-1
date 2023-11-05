@@ -1,0 +1,46 @@
+:root {
+  --primary-light: #FAF4EA;
+  --primary-dark: #31261A;
+  --primary-green: #819B57;
+  --secondary-light: #CFCFBC;
+  --secondary-dark: #A18268;
+  --secondary-green: #465929;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-dark);
+}
+*:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-link {
+  color: var(--primary-light);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.accent {
+  color: var(--primary-green);
+}
+
+.hero-title {
+  color: var(--primary-light);
+}
+
+.traditions-advantages {
+  background-color: var(--primary-green);
+}
+
+/*# sourceMappingURL=styles.css.map */
