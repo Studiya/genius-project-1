@@ -11,10 +11,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--primary-dark);
 }
 *:focus {
   outline: none;
+}
+
+body {
+  color: var(--primary-dark);
 }
 
 ul {
@@ -41,6 +44,17 @@ ul {
 
 .traditions-advantages {
   background-color: var(--primary-green);
+}
+
+.formats-list {
+  color: var(--primary-light);
+}
+
+.footer a {
+  color: var(--primary-light);
+}
+.footer-copyright {
+  color: var(--secondary-dark);
 }
 
 /*# sourceMappingURL=styles.css.map */
