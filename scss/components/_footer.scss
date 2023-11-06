@@ -1,10 +1,23 @@
 .footer {
-
+    
     a {
         color: var(--primary-light);
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
-    &-copyright {
+    &__address {
+
+        &-link {
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+    &__copyright {
+        font-size: 14px;
         color: var(--secondary-dark);
     }
 }

@@ -1,3 +1,43 @@
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/poppins-v20-latin-300.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/poppins-v20-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/poppins-v20-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../assets/fonts/poppins-v20-latin-900.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 :root {
   --primary-light: #FAF4EA;
   --primary-dark: #31261A;
@@ -5,6 +45,15 @@
   --secondary-light: #CFCFBC;
   --secondary-dark: #A18268;
   --secondary-green: #465929;
+}
+
+.accent {
+  color: var(--primary-green);
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 * {
@@ -18,42 +67,109 @@
 
 body {
   color: var(--primary-dark);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 ul {
   list-style-type: none;
 }
 
+address {
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 128px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.31;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .nav-link {
   color: var(--primary-light);
-  text-align: center;
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
-
-.accent {
+.nav-link:hover {
   color: var(--primary-green);
+  font-weight: 600;
 }
 
-.hero-title {
-  color: var(--primary-light);
-}
-
-.traditions-advantages {
+.grn-btn {
+  padding: 16px 32px;
   background-color: var(--primary-green);
+  color: var(--primary-light);
+  font-weight: 600;
+  border-radius: 8px;
+  border: 2px solid var(--primary-green);
+  cursor: pointer;
+}
+.grn-btn:hover {
+  background-color: transparent;
+  color: var(--secondary-green);
 }
 
-.formats-list {
+.hero__title {
   color: var(--primary-light);
+  text-align: center;
+}
+
+.traditions__advantages {
+  background-color: var(--primary-green);
+  color: var(--primary-light);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.formats__list {
+  color: var(--primary-light);
+}
+.formats__item h3 {
+  font-size: 24px;
+}
+.formats_descr {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contacts__privacy {
+  color: var(--primary-dark);
+  font-size: 12px;
+}
+.contacts__privacy a {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+.contacts__privacy a:hover {
+  text-decoration: none;
 }
 
 .footer a {
   color: var(--primary-light);
 }
-.footer-copyright {
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer__address-link {
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer__copyright {
+  font-size: 14px;
   color: var(--secondary-dark);
 }
 

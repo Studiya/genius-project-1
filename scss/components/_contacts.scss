@@ -1,0 +1,16 @@
+.contacts {
+
+    &__privacy {
+        color: var(--primary-dark);
+        font-size: 12px;
+
+        a {
+            color: var(--primary-dark);
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

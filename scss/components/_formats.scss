@@ -1,0 +1,19 @@
+.formats {
+
+    &__list {
+        color: var(--primary-light);
+    }
+
+    &__item {
+
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    &_descr {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
