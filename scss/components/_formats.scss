@@ -1,4 +1,9 @@
 .formats {
+    padding: 0 0 96px;
+
+    &__title {
+        margin-bottom: 80px;
+    }
 
     &__list {
         color: var(--primary-light);
@@ -11,9 +16,17 @@
         }
     }
 
-    &_descr {
-        font-size: 14px;
-        font-weight: 300;
+    &__item {
+
+        &-title {
+            margin-bottom: 16px;
+        }
+
+        &-descr {
+            font-size: 14px;
+            font-weight: 300;
+        }
+
     }
 }
 

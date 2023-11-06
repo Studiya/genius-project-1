@@ -56,8 +56,17 @@
   text-transform: uppercase;
 }
 
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 * {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -71,6 +80,13 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 ul {
@@ -123,29 +139,69 @@ a {
   color: var(--secondary-green);
 }
 
+.header {
+  padding: 32px 87px 0 103px;
+}
+
+.hero {
+  padding: 272px 0;
+}
 .hero__title {
   color: var(--primary-light);
   text-align: center;
+  margin-bottom: 0;
 }
 
-.traditions__advantages {
+.advantages {
   background-color: var(--primary-green);
   color: var(--primary-light);
   font-size: 20px;
   font-weight: 300;
 }
 
+.traditions {
+  padding: 96px 0 96px;
+}
+.traditions__title {
+  margin-bottom: 42px;
+}
+
+.bakers {
+  padding: 0 0 96px;
+}
+.bakers__title {
+  margin-bottom: 80px;
+}
+.bakers__baker-title {
+  margin-bottom: 16px;
+}
+
+.formats {
+  padding: 0 0 96px;
+}
+.formats__title {
+  margin-bottom: 80px;
+}
 .formats__list {
   color: var(--primary-light);
 }
 .formats__item h3 {
   font-size: 24px;
 }
-.formats_descr {
+.formats__item-title {
+  margin-bottom: 16px;
+}
+.formats__item-descr {
   font-size: 14px;
   font-weight: 300;
 }
 
+.contacts {
+  padding: 0 0 96px;
+}
+.contacts__title {
+  margin-bottom: 16px;
+}
 .contacts__privacy {
   color: var(--primary-dark);
   font-size: 12px;
@@ -158,6 +214,9 @@ a {
   text-decoration: none;
 }
 
+.footer {
+  padding: 32px 101px 32px 100px;
+}
 .footer a {
   color: var(--primary-light);
 }

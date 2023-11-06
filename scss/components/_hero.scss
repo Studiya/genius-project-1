@@ -1,7 +1,9 @@
 .hero{
+    padding: 272px 0;
     
     &__title {
         color: var(--primary-light);
         text-align: center;
+        margin-bottom: 0;
     }
 }

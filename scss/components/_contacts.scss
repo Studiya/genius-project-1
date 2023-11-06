@@ -1,4 +1,9 @@
 .contacts {
+    padding: 0 0 96px;
+
+    &__title {
+        margin-bottom: 16px;
+    }
 
     &__privacy {
         color: var(--primary-dark);

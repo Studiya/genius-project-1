@@ -1,9 +1,7 @@
 .traditions {
+    padding: 96px 0 96px;
 
-    &__advantages {
-        background-color: var(--primary-green);
-        color: var(--primary-light);
-        font-size: 20px;
-        font-weight: 300;
+    &__title {
+        margin-bottom: 42px;
     }
 }
