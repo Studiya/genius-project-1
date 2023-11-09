@@ -44,25 +44,27 @@
         <div class="wrapper">
           <h2 class="hidden">Наші переваги</h2>
           <ul class="advantages__list">
-            <li>Великий попит на ринку</li>
-            <li>Доступні за бюджетом формати</li>
-            <li>Досвідчена управлінська команда</li>
+            <li class="advantages__item">Великий попит на ринку</li>
+            <li class="advantages__item">Доступні за бюджетом формати</li>
+            <li class="advantages__item">Досвідчена управлінська команда</li>
           </ul>
         </div>
       </section>
       <section id="traditions" class="traditions">
         <div class="wrapper">
-          <h2 class="traditions__title">Новий формат традицій</h2>
-          <p>
-            <span class="accent uppercase">shop bakery</span> — це пекарня, яка
-            взяла все найкраще, і зберегла смак традиційної випічки та
-            натуральність інгредієнтів.
-          </p>
-          <p>
-            Ми працюємо як найвідоміші мережі —
-            <span class="accent">5 хвилин і замовлення готове</span>. А ще у
-            наших пекарень стильний дизайн та висока якість обслуговування!
-          </p>
+          <div class="traditions__descr">
+            <h2 class="traditions__title">Новий формат традицій</h2>
+            <p class="tradition__text">
+              <span class="accent uppercase">shop bakery</span> — це пекарня,
+              яка взяла все найкраще, і зберегла смак традиційної випічки та
+              натуральність інгредієнтів.
+            </p>
+            <p class="tradition__text limited_340">
+              Ми працюємо як найвідоміші мережі —
+              <span class="accent">5 хвилин і замовлення готове</span>. А ще у
+              наших пекарень стильний дизайн та висока якість обслуговування!
+            </p>
+          </div>
           <img
             src="./assets/imgs/baker-man.jpg"
             alt="Пекар, що дивиться на хліб"
@@ -104,7 +106,7 @@
           <h2 class="formats__title">Формати</h2>
           <ul class="formats__list">
             <li class="formats__item">
-              <article>
+              <article class="formats__item-content">
                 <h3 class="formats__item-title" lang="en">Walrus</h3>
                 <dl class="formats__item-descr">
                   <dt>Площа:</dt>
@@ -120,9 +122,14 @@
                   <dd>є</dd>
                 </dl>
               </article>
+              <img
+                class="formats__item-img"
+                src="./assets/imgs/format-bg-1.jpg"
+                alt="Зображення першого формату"
+              />
             </li>
             <li class="formats__item">
-              <article>
+              <article class="formats__item-content">
                 <h3 class="formats__item-title" lang="en">Horseshoe</h3>
                 <dl class="formats__item-descr">
                   <dt>Площа:</dt>
@@ -135,9 +142,14 @@
                   <dd>відсутні</dd>
                 </dl>
               </article>
+              <img
+                class="formats__item-img"
+                src="./assets/imgs/format-bg-2.jpg"
+                alt="Зображення другого формату"
+              />
             </li>
             <li class="formats__item">
-              <article>
+              <article class="formats__item-content">
                 <h3 class="formats__item-title" lang="en">Handlebar</h3>
                 <dl class="formats__item-descr">
                   <dt>Площа:</dt>
@@ -150,6 +162,11 @@
                   <dd>відсутні</dd>
                 </dl>
               </article>
+              <img
+                class="formats__item-img"
+                src="./assets/imgs/format-bg-2.jpg"
+                alt="Зображення третього формату"
+              />
             </li>
           </ul>
         </div>

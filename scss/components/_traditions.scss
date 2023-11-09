@@ -1,7 +1,25 @@
 .traditions {
     padding: 96px 0 96px;
 
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
     &__title {
         margin-bottom: 42px;
+    }
+
+    &__descr {
+        max-width: 710px;
+
+        & > * {
+            margin-bottom: 42px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }
