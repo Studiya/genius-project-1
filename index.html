@@ -112,74 +112,86 @@
       <section id="formats" class="formats">
         <div class="wrapper">
           <h2 class="formats__title">Формати</h2>
-          <ul class="formats__list">
-            <li class="formats__item">
-              <article class="formats__item-content">
-                <h3 class="formats__item-title" lang="en">Walrus</h3>
-                <dl class="formats__item-descr">
-                  <dt>Площа:</dt>
-                  <dd>до 120 м2</dd>
-                  <dt>Меню:</dt>
-                  <dd>розширене меню</dd>
-                  <dt>Штат:</dt>
-                  <dd>
-                    2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </dd>
-                  <dt>Посадкові місця:</dt>
-                  <dd>є</dd>
-                </dl>
-              </article>
-              <div class="formats__item-img">
-                <img
-                  src="./assets/imgs/format-bg-1.jpg"
-                  alt="Зображення першого формату"
-                />
-              </div>
-            </li>
-            <li class="formats__item">
-              <article class="formats__item-content">
-                <h3 class="formats__item-title" lang="en">Horseshoe</h3>
-                <dl class="formats__item-descr">
-                  <dt>Площа:</dt>
-                  <dd>до 25 м2</dd>
-                  <dt>Меню:</dt>
-                  <dd>найпопулярніші позиції меню</dd>
-                  <dt>Штат:</dt>
-                  <dd>2 продавці-касири, 2 пекарі, 1 помічник пекаря</dd>
-                  <dt>Посадкові місця:</dt>
-                  <dd>відсутні</dd>
-                </dl>
-              </article>
-              <div class="formats__item-img">
-                <img
-                  src="./assets/imgs/format-bg-2.jpg"
-                  alt="Зображення другого формату"
-                />
-              </div>
-            </li>
-            <li class="formats__item">
-              <article class="formats__item-content">
-                <h3 class="formats__item-title" lang="en">Handlebar</h3>
-                <dl class="formats__item-descr">
-                  <dt>Площа:</dt>
-                  <dd>до 15 м2</dd>
-                  <dt>Меню:</dt>
-                  <dd>найпопулярніші позиції меню</dd>
-                  <dt>Штат:</dt>
-                  <dd>1 продавець, 1 пекар, 1 помічник пекаря</dd>
-                  <dt>Посадкові місця:</dt>
-                  <dd>відсутні</dd>
-                </dl>
-              </article>
-              <div class="formats__item-img">
-                <img
-                  src="./assets/imgs/format-bg-2.jpg"
-                  alt="Зображення третього формату"
-                />
-              </div>
-            </li>
-          </ul>
+          <div class="carousel">
+            <button class="carousel__btn" type="button">
+              <svg class="carousel__arrow">
+                <use href="./assets/imgs/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="carousel__list">
+              <li class="carousel__item">
+                <article class="carousel__item-content">
+                  <h3 class="carousel__item-title" lang="en">Walrus</h3>
+                  <dl class="carousel__item-descr">
+                    <dt>Площа:</dt>
+                    <dd>до 120 м2</dd>
+                    <dt>Меню:</dt>
+                    <dd>розширене меню</dd>
+                    <dt>Штат:</dt>
+                    <dd>
+                      2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби
+                    </dd>
+                    <dt>Посадкові місця:</dt>
+                    <dd>є</dd>
+                  </dl>
+                </article>
+                <div class="carousel__item-img">
+                  <img
+                    src="./assets/imgs/format-bg-1.jpg"
+                    alt="Зображення першого формату"
+                  />
+                </div>
+              </li>
+              <li class="carousel__item">
+                <article class="carousel__item-content">
+                  <h3 class="carousel__item-title" lang="en">Horseshoe</h3>
+                  <dl class="carousel__item-descr">
+                    <dt>Площа:</dt>
+                    <dd>до 25 м2</dd>
+                    <dt>Меню:</dt>
+                    <dd>найпопулярніші позиції меню</dd>
+                    <dt>Штат:</dt>
+                    <dd>2 продавці-касири, 2 пекарі, 1 помічник пекаря</dd>
+                    <dt>Посадкові місця:</dt>
+                    <dd>відсутні</dd>
+                  </dl>
+                </article>
+                <div class="carousel__item-img">
+                  <img
+                    src="./assets/imgs/format-bg-2.jpg"
+                    alt="Зображення другого формату"
+                  />
+                </div>
+              </li>
+              <li class="carousel__item">
+                <article class="carousel__item-content">
+                  <h3 class="carousel__item-title" lang="en">Handlebar</h3>
+                  <dl class="carousel__item-descr">
+                    <dt>Площа:</dt>
+                    <dd>до 15 м2</dd>
+                    <dt>Меню:</dt>
+                    <dd>найпопулярніші позиції меню</dd>
+                    <dt>Штат:</dt>
+                    <dd>1 продавець, 1 пекар, 1 помічник пекаря</dd>
+                    <dt>Посадкові місця:</dt>
+                    <dd>відсутні</dd>
+                  </dl>
+                </article>
+                <div class="carousel__item-img">
+                  <img
+                    src="./assets/imgs/format-bg-2.jpg"
+                    alt="Зображення третього формату"
+                  />
+                </div>
+              </li>
+            </ul>
+            <button class="carousel__btn" type="button">
+              <svg class="carousel__arrow">
+                <use href="./assets/imgs/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section id="contacts" class="contacts">
@@ -249,8 +261,20 @@
                 Україна, м. Київ, вул. Січових Стрільців 54
               </a>
             </li>
-            <li><a href="#">inst</a></li>
-            <li><a href="#">fb</a></li>
+            <li>
+              <a href="#">
+                <svg class="footer__soc-icon">
+                  <use href="./assets/imgs/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer__soc-icon">
+                  <use href="./assets/imgs/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
           <div class="footer__privacy">
             <a href="#">Політика конфіденційності</a>

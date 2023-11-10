@@ -41,6 +41,7 @@
 
         &:hover {
             text-decoration: underline;
+            color: var(--primary-green);
         }
     }
 
@@ -76,5 +77,15 @@
     &__copyright {
         font-size: 14px;
         color: var(--secondary-dark);
+    }
+
+    &__soc-icon {
+        width: 32px;
+        height: 32px;
+        fill: var(--primary-light);
+
+        &:hover {
+            fill: var(--primary-green);
+        }
     }
 }
