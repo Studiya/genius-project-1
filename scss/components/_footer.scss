@@ -1,5 +1,18 @@
 .footer {
-    padding: 32px 101px 32px 100px;
+    padding: 32px 0 32px;
+    background-image: url(../../assets/imgs/footer.jpg);
+    position: relative;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+
+        & > * {
+            flex-grow: 1;
+        }
+    }
     
     a {
         color: var(--primary-light);
@@ -10,6 +23,14 @@
     }
 
     &__address {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+
+        &-list {
+            max-width: 211px;
+        }
 
         &-link {
             font-size: 16px;
