@@ -1,6 +1,7 @@
 .hero{
     padding: 272px 0;
     background-image: url(../../assets/imgs/hero-bg.jpg);
+    background-position: center top;
     
     &__title {
         color: var(--primary-light);

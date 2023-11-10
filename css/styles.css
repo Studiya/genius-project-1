@@ -71,7 +71,7 @@
 
 .bg-img {
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   background-size: cover;
 }
 
@@ -86,6 +86,7 @@
 
 body {
   color: var(--primary-dark);
+  background-color: var(--primary-light);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -177,6 +178,7 @@ a {
 .hero {
   padding: 272px 0;
   background-image: url(../../assets/imgs/hero-bg.jpg);
+  background-position: center top;
 }
 .hero__title {
   color: var(--primary-light);
@@ -224,7 +226,35 @@ a {
   padding: 0 0 96px;
 }
 .bakers__title {
-  margin-bottom: 80px;
+  max-width: 520px;
+  margin: 0 auto 80px;
+  text-align: center;
+  position: relative;
+}
+.bakers__title:before {
+  content: "";
+  display: block;
+  width: 352px;
+  height: 2px;
+  background-color: var(--secondary-light);
+  position: absolute;
+  left: -344px;
+  top: 145px;
+}
+.bakers__title:after {
+  content: "";
+  display: block;
+  width: 352px;
+  height: 2px;
+  background-color: var(--secondary-light);
+  position: absolute;
+  right: -344px;
+  top: 145px;
+}
+.bakers__baker-img {
+  border-radius: 4px 4px 4px 200px;
+  background: var(--secondary-light);
+  box-shadow: -16px 16px 0 -2px var(--primary-light), -16px 16px 0 0 var(--secondary-dark);
 }
 .bakers__baker-title {
   margin-bottom: 16px;
@@ -307,6 +337,26 @@ a {
   background-image: url(../../assets/imgs/footer.jpg);
   position: relative;
 }
+.footer:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 179px;
+  height: 121px;
+  background-image: url(../../assets/imgs/bg-bread-left.png);
+}
+.footer:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 378px;
+  height: 187px;
+  background-image: url(../../assets/imgs/bg-bread-right.png);
+}
 .footer .wrapper {
   display: flex;
   flex-direction: row;
@@ -322,6 +372,9 @@ a {
 .footer a:hover {
   text-decoration: underline;
 }
+.footer__nav-item:not(:last-child) {
+  margin-bottom: 16px;
+}
 .footer__address {
   display: flex;
   flex-direction: row;
@@ -334,6 +387,12 @@ a {
 .footer__address-link {
   font-size: 16px;
   font-weight: 300;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.footer__privacy a {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer__copyright {
   font-size: 14px;
