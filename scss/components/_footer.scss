@@ -45,6 +45,13 @@
         }
     }
 
+    &__logo {
+        
+        a {
+            display: inline-block;
+        }
+    }
+
     &__nav-item:not(:last-child) {
         margin-bottom: 16px;
     }

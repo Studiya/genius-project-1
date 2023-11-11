@@ -66,6 +66,7 @@
             </p>
           </div>
           <img
+            class="traditions__img"
             src="./assets/imgs/baker-man.jpg"
             alt="Пекар, що дивиться на хліб"
           />
@@ -78,32 +79,37 @@
           </h2>
           <ul class="bakers__list">
             <li class="bakers__baker">
-              <article>
+              <article class="bakers__baker-content">
                 <img
                   class="bakers__baker-img"
                   src="./assets/imgs/baker-nastya.jpg"
                   alt="Дівчина пекар"
                 />
-                <h3 class="bakers__baker-title">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
-                <p>Я випічу для вас найсмачніщі вироби!</p>
+                <div class="bakers__baker-descr" style="max-width: 310px">
+                  <h3 class="bakers__baker-title">Настя</h3>
+                  <p>Привіт, я Настя!</p>
+                  <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
+                  <p>Я випічу для вас найсмачніщі вироби!</p>
+                </div>
               </article>
             </li>
             <li class="bakers__baker">
-              <article>
+              <article class="bakers__baker-content">
                 <img
                   class="bakers__baker-img"
                   src="./assets/imgs/baker-vlad.jpg"
                   alt="Хлопець пекар"
                 />
-                <h3 class="bakers__baker-title">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <p>
-                  Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
-                  любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
-                </p>
-                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                <div class="bakers__baker-descr" style="max-width: auto">
+                  <h3 class="bakers__baker-title">Влад</h3>
+                  <p>Привіт, я Влад!</p>
+                  <p>
+                    Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
+                    любов, з якою ми ділимось кожен раз з Вами через нашу
+                    випічку!
+                  </p>
+                  <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                </div>
               </article>
             </li>
           </ul>
@@ -186,7 +192,7 @@
                 </div>
               </li>
             </ul>
-            <button class="carousel__btn" type="button">
+            <button class="carousel__btn carousel__btn_right" type="button">
               <svg class="carousel__arrow">
                 <use href="./assets/imgs/icons.svg#icon-arrow"></use>
               </svg>
@@ -196,7 +202,7 @@
       </section>
       <section id="contacts" class="contacts">
         <div class="wrapper">
-          <form action="" class="contacts__form">
+          <form class="contacts__form" action="">
             <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
             <p>Заповни форму, щоб ми звʼязались з тобою!</p>
             <input type="text" placeholder="Ім'я" />
@@ -209,8 +215,8 @@
             </p>
           </form>
           <iframe
+            class="contacts__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1638712576287!2d30.48865857600307!3d50.45667308691644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699171696556!5m2!1suk!2sua"
-            width="603"
             height="595"
             allowfullscreen=""
             loading="lazy"
@@ -221,9 +227,12 @@
     </main>
     <footer class="footer bg-img">
       <div class="wrapper">
-        <a href="#">
-          <img src="./assets/imgs/logo.svg" alt="Лого сучасної пекарні" />
-        </a>
+        <div class="footer__logo">
+          <a href="#">
+            <img src="./assets/imgs/logo.svg" alt="Лого сучасної пекарні" />
+          </a>
+        </div>
+
         <nav class="footer__nav">
           <ul>
             <li class="footer__nav-item">

@@ -1,6 +1,17 @@
 .contacts {
     padding: 0 0 96px;
 
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 32px;
+
+        & > * {
+            flex-basis: calc((100% - 32px) / 2);
+        }
+    }
+
     &__title {
         margin-bottom: 16px;
     }
@@ -17,5 +28,10 @@
                 text-decoration: none;
             }
         }
+    }
+
+    &__map {
+        border-radius: 16px;
+        border: none;
     }
 }

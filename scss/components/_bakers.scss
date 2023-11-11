@@ -30,12 +30,32 @@
         }
     }
 
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px 30px;
+    }
+
     &__baker {
+        flex-basis: calc((100% - 30px) / 2);
+
+        &-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            gap: 30px;
+        }
 
         &-img {
             border-radius: 4px 4px 4px 200px;
             background: var(--secondary-light);
             box-shadow: -16px 16px 0 -2px var(--primary-light), -16px 16px 0 0 var(--secondary-dark);
+        }
+
+        &-descr > *:not(:last-child) {
+            margin-bottom: 24px;
         }
 
         &-title {

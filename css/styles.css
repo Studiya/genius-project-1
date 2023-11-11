@@ -220,6 +220,9 @@ a {
 .traditions__descr > *:last-child {
   margin-bottom: 0;
 }
+.traditions__img {
+  border-radius: 400px 400px 0px 0px;
+}
 
 .bakers {
   padding: 0 0 96px;
@@ -250,10 +253,29 @@ a {
   right: -344px;
   top: 145px;
 }
+.bakers__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px 30px;
+}
+.bakers__baker {
+  flex-basis: calc((100% - 30px) / 2);
+}
+.bakers__baker-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 30px;
+}
 .bakers__baker-img {
   border-radius: 4px 4px 4px 200px;
   background: var(--secondary-light);
   box-shadow: -16px 16px 0 -2px var(--primary-light), -16px 16px 0 0 var(--secondary-dark);
+}
+.bakers__baker-descr > *:not(:last-child) {
+  margin-bottom: 24px;
 }
 .bakers__baker-title {
   margin-bottom: 16px;
@@ -269,6 +291,15 @@ a {
 .contacts {
   padding: 0 0 96px;
 }
+.contacts .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+}
+.contacts .wrapper > * {
+  flex-basis: calc((100% - 32px) / 2);
+}
 .contacts__title {
   margin-bottom: 16px;
 }
@@ -282,6 +313,10 @@ a {
 }
 .contacts__privacy a:hover {
   text-decoration: none;
+}
+.contacts__map {
+  border-radius: 16px;
+  border: none;
 }
 
 .footer {
@@ -325,6 +360,9 @@ a {
   text-decoration: underline;
   color: var(--primary-green);
 }
+.footer__logo a {
+  display: inline-block;
+}
 .footer__nav-item:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -360,10 +398,18 @@ a {
   fill: var(--primary-green);
 }
 
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
 .carousel__btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   padding: 0;
@@ -377,6 +423,9 @@ a {
 }
 .carousel__btn:hover .carousel__arrow {
   fill: var(--primary-light);
+}
+.carousel__btn_right {
+  transform: rotate(180deg);
 }
 .carousel__arrow {
   width: 16px;
