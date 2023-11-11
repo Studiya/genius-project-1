@@ -2,31 +2,31 @@
     padding: 0 0 96px;
 
     &__title {
-        max-width: 520px;
         margin: 0 auto 80px;
         text-align: center;
         position: relative;
 
-        &:before {
-            content: '';
+        &_accent {
+            display: block;
+        }
+
+        &:before,
+        &:after {
+            content: "";
             display: block;
             width: 352px;
             height: 2px;
             background-color: var(--secondary-light);
             position: absolute;
-            left: calc(-352px + 8px);
-            top: 145px;
+            bottom: 24px;
+        }
+
+        &:before {
+            left: 0;
         }
 
         &:after {
-            content: '';
-            display: block;
-            width: 352px;
-            height: 2px;
-            background-color: var(--secondary-light);
-            position: absolute;
-            right: calc(-352px + 8px);
-            top: 145px;
+            right: 0;
         }
     }
 
@@ -51,7 +51,9 @@
         &-img {
             border-radius: 4px 4px 4px 200px;
             background: var(--secondary-light);
-            box-shadow: -16px 16px 0 -2px var(--primary-light), -16px 16px 0 0 var(--secondary-dark);
+            box-shadow:
+                -16px 16px 0 -2px var(--primary-light),
+                -16px 16px 0 0 var(--secondary-dark);
         }
 
         &-descr > *:not(:last-child) {

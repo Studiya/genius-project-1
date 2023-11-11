@@ -65,6 +65,12 @@
   overflow: hidden;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .limited_340 {
   max-width: 340px;
 }
@@ -228,30 +234,27 @@ a {
   padding: 0 0 96px;
 }
 .bakers__title {
-  max-width: 520px;
   margin: 0 auto 80px;
   text-align: center;
   position: relative;
 }
-.bakers__title:before {
+.bakers__title_accent {
+  display: block;
+}
+.bakers__title:before, .bakers__title:after {
   content: "";
   display: block;
   width: 352px;
   height: 2px;
   background-color: var(--secondary-light);
   position: absolute;
-  left: -344px;
-  top: 145px;
+  bottom: 24px;
+}
+.bakers__title:before {
+  left: 0;
 }
 .bakers__title:after {
-  content: "";
-  display: block;
-  width: 352px;
-  height: 2px;
-  background-color: var(--secondary-light);
-  position: absolute;
-  right: -344px;
-  top: 145px;
+  right: 0;
 }
 .bakers__list {
   display: flex;
@@ -324,10 +327,13 @@ a {
   background-image: url(../../assets/imgs/footer.jpg);
   position: relative;
 }
-.footer:before {
+.footer:before, .footer:after {
   content: "";
   display: block;
   position: absolute;
+  background-repeat: no-repeat;
+}
+.footer:before {
   left: 0;
   bottom: 0;
   width: 179px;
@@ -335,9 +341,6 @@ a {
   background-image: url(../../assets/imgs/bg-bread-left.png);
 }
 .footer:after {
-  content: "";
-  display: block;
-  position: absolute;
   right: 0;
   bottom: 0;
   width: 378px;
@@ -478,6 +481,31 @@ a {
   background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
   background-blend-mode: overlay;
   border-radius: 16px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.modal__inner {
+  position: relative;
+  background-color: var(--primary-light);
+  border-radius: 32px;
+}
+.modal__close-btn {
+  position: absolute;
+  inset: 40px 40px auto auto;
+}
+
+.call-order__inner {
+  width: 880px;
+  height: 880px;
 }
 
 /*# sourceMappingURL=styles.css.map */
