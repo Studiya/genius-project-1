@@ -13,20 +13,19 @@
     }
 
     &__title {
-        margin-bottom: 16px;
+        margin-bottom: 42px;
+        h2 {
+            margin-bottom: 16px;
+        }
     }
 
-    &__privacy {
-        color: var(--primary-dark);
-        font-size: 12px;
+    .call-order-form {
+        &__block {
+            margin-bottom: 24px;
+        }
 
-        a {
-            color: var(--primary-dark);
-            text-decoration: underline;
-
-            &:hover {
-                text-decoration: none;
-            }
+        &__btn {
+            margin-bottom: 16px;
         }
     }
 

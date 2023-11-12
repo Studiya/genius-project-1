@@ -205,18 +205,62 @@
       </section>
       <section id="contacts" class="contacts">
         <div class="wrapper">
-          <form class="contacts__form" action="">
-            <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
-            <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-            <input type="text" placeholder="Ім'я" />
-            <input type="number" placeholder="Телефон" />
-            <input type="email" placeholder="Електронна пошта" />
-            <button type="submit" class="grn-btn">Замовити дзвінок</button>
-            <p class="contacts__privacy">
-              Натискаючи на кнопку я погоджуюсь з
-              <a href="#">політикою конфіденційності</a>
-            </p>
-          </form>
+          <div class="contacts__form">
+            <div class="contacts__title">
+              <h2>Приєднуйся до мережі пекарень</h2>
+              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+            </div>
+            <form
+              class="call-order-form"
+              name="call-order-form"
+              autocomplete="off"
+              novalidate
+            >
+              <div class="call-order-form__block">
+                <label class="call-order-form__label hidden" for="user-name"
+                  >Ім'я</label
+                >
+                <input
+                  class="call-order-form__input"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="Ім'я"
+                />
+              </div>
+              <div class="call-order-form__block">
+                <label class="call-order-form__label hidden" for="user-tel"
+                  >Телефон</label
+                >
+                <input
+                  class="call-order-form__input"
+                  type="tel"
+                  name="user-tel"
+                  id="user-tel"
+                  placeholder="Телефон"
+                />
+              </div>
+              <div class="call-order-form__block">
+                <label class="call-order-form__label hidden" for="user-email"
+                  >Електронна пошта</label
+                >
+                <input
+                  class="call-order-form__input"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Електронна пошта"
+                />
+              </div>
+              <button class="call-order-form__btn grn-btn" type="submit">
+                Замовити дзвінок
+              </button>
+              <p class="call-order-form__privacy">
+                Натискаючи на кнопку я погоджуюсь
+                <a href="#">з політикою конфіденційності</a>
+              </p>
+            </form>
+          </div>
           <iframe
             class="contacts__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1638712576287!2d30.48865857600307!3d50.45667308691644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699171696556!5m2!1suk!2sua"
@@ -295,21 +339,65 @@
         </address>
       </div>
     </footer>
-    <div class="modal call-order">
+    <div class="modal call-order hidden">
       <div class="modal__inner call-order__inner">
         <button class="modal__close-btn" type="button">XXX</button>
-        <h2>Замовити дзвінок</h2>
-        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="call-order-form" autocomplete="off" novalidate>
-          <input type="text" name="user-name" id="user-name" />
-          <input type="tel" name="user-tel" id="user-tel" />
-          <input type="email" name="user-email" id="user-email" />
-          <button class="grn-btn" type="submit">Замовити дзвінок</button>
-          <p>
-            Натискаючи на кнопку я погоджуюсь
-            <a href="#">з політикою конфіденційності</a>
-          </p>
-        </form>
+        <div class="call-order__content">
+          <div class="call-order__title">
+            <h2>Замовити дзвінок</h2>
+            <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+          </div>
+          <form
+            class="call-order-form"
+            name="call-order-form"
+            autocomplete="off"
+            novalidate
+          >
+            <div class="call-order-form__block">
+              <label class="call-order-form__label hidden" for="user-name"
+                >Ім'я</label
+              >
+              <input
+                class="call-order-form__input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Ім'я"
+              />
+            </div>
+            <div class="call-order-form__block">
+              <label class="call-order-form__label hidden" for="user-tel"
+                >Телефон</label
+              >
+              <input
+                class="call-order-form__input"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="Телефон"
+              />
+            </div>
+            <div class="call-order-form__block">
+              <label class="call-order-form__label hidden" for="user-email"
+                >Електронна пошта</label
+              >
+              <input
+                class="call-order-form__input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Електронна пошта"
+              />
+            </div>
+            <button class="call-order-form__btn grn-btn" type="submit">
+              Замовити дзвінок
+            </button>
+            <p class="call-order-form__privacy">
+              Натискаючи на кнопку я погоджуюсь
+              <a href="#">з політикою конфіденційності</a>
+            </p>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/index.js" type="module"></script>

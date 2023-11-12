@@ -1,0 +1,52 @@
+.call-order-form {
+    &__block {
+        margin-bottom: 32px;
+    }
+
+    &__input {
+        padding: 16px 42px;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid var(--secondary-dark);
+        border-radius: 8px;
+        font-size: 16px;
+
+        &:focus {
+            border-color: var(--primary-green);
+
+            &::placeholder {
+                color: var(--primary-dark);
+            }
+        }
+
+        &::placeholder {
+            color: var(--secondary-dark);
+            font-size: 16px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto 24px;
+    }
+
+    &__privacy {
+        display: block;
+        max-width: 215px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--primary-dark);
+
+        a {
+            color: var(--primary-dark);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
