@@ -214,7 +214,6 @@
               class="call-order-form"
               name="call-order-form"
               autocomplete="off"
-              novalidate
             >
               <div class="call-order-form__block">
                 <label class="call-order-form__label hidden" for="user-name"
@@ -226,6 +225,7 @@
                   name="user-name"
                   id="user-name"
                   placeholder="Ім'я"
+                  required
                 />
               </div>
               <div class="call-order-form__block">
@@ -238,6 +238,8 @@
                   name="user-tel"
                   id="user-tel"
                   placeholder="Телефон"
+                  pattern="^\+[0-9]{12}"
+                  required
                 />
               </div>
               <div class="call-order-form__block">
@@ -250,6 +252,7 @@
                   name="user-email"
                   id="user-email"
                   placeholder="Електронна пошта"
+                  required
                 />
               </div>
               <button class="call-order-form__btn grn-btn" type="submit">
@@ -351,7 +354,6 @@
             class="call-order-form"
             name="call-order-form"
             autocomplete="off"
-            novalidate
           >
             <div class="call-order-form__block">
               <label class="call-order-form__label hidden" for="user-name"
@@ -363,6 +365,7 @@
                 name="user-name"
                 id="user-name"
                 placeholder="Ім'я"
+                required
               />
             </div>
             <div class="call-order-form__block">
@@ -375,6 +378,8 @@
                 name="user-tel"
                 id="user-tel"
                 placeholder="Телефон"
+                pattern="^\+[0-9]{12}"
+                required
               />
             </div>
             <div class="call-order-form__block">
@@ -387,6 +392,7 @@
                 name="user-email"
                 id="user-email"
                 placeholder="Електронна пошта"
+                required
               />
             </div>
             <button class="call-order-form__btn grn-btn" type="submit">
