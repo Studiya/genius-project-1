@@ -40,4 +40,27 @@
             }
         }
     }
+
+    &__menu-btn {
+        display: none;
+
+        &-icon {
+            width: 20px;
+            height: 14px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        &__nav {
+            display: none;
+        }
+
+        &__btn {
+            display: none;
+        }
+
+        &__menu-btn {
+            display: block;
+        }
+    }
 }
