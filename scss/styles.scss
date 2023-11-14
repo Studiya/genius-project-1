@@ -1,20 +1,21 @@
-@use "./utils/fonts";
-@use "./utils/palette";
-@use "./utils/modifiers";
+@import "./utils/variables";
+@import "./utils/fonts";
+@import "./utils/modifiers";
 
-@use "base";
+@import "base";
 
-@use "./layout/header";
-@use "./layout/footer";
+@import "./layout/header";
+@import "./layout/footer";
 
-@use "./components/hero";
-@use "./components/advantages";
-@use "./components/traditions";
-@use "./components/bakers";
-@use "./components/formats";
-@use "./components/contacts";
+@import "./components/hero";
+@import "./components/advantages";
+@import "./components/traditions";
+@import "./components/bakers";
+@import "./components/formats";
+@import "./components/contacts";
+@import "./components/mobile-menu";
 
-@use "./widgets/carousel";
-@use "./widgets/modal-default";
-@use "./widgets/modal-call-order";
-@use "./widgets/form-call-order";
+@import "./widgets/carousel";
+@import "./widgets/modal-default";
+@import "./widgets/modal-call-order";
+@import "./widgets/form-call-order";
