@@ -2,15 +2,40 @@
     background-color: var(--primary-green);
     padding: 16px 0;
 
+    @media screen and (max-width: $bp-mobile) {
+        background-color: transparent;
+        padding: 40px 21px 20px;
+    }
+
+    .wrapper {
+        @media screen and (max-width: $bp-mobile) {
+            background-color: var(--secondary-light);
+            padding: 24px 40px;
+            border-radius: 24px;
+        }
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;
         gap: 40px;
+
+        @media screen and (max-width: $bp-mobile) {
+            flex-direction: column;
+            gap: 16px;
+        }
     }
 
     &__item {
         color: var(--primary-light);
         font-size: 20px;
         font-weight: 300;
+        text-align: center;
+
+        @media screen and (max-width: $bp-mobile) {
+            color: var(--primary-dark);
+            font-size: 14px;
+            text-align: start;
+        }
     }
 }

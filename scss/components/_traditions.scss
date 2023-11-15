@@ -1,5 +1,9 @@
 .traditions {
-    padding: 96px 0 96px;
+    padding-top: 96px;
+
+    @media screen and (max-width: $bp-mobile) {
+        padding-top: 20px;
+    }
 
     .wrapper {
         display: flex;
