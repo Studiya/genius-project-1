@@ -1,9 +1,10 @@
 .carousel {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 32px;
+    position: relative;
 
     &__btn {
         display: flex;
@@ -17,6 +18,8 @@
         border-radius: 50%;
         border: 1px solid var(--primary-dark);
         cursor: pointer;
+        position: absolute;
+        top: calc(50% - 22px);
 
         &:hover {
             background-color: var(--primary-dark);
@@ -26,8 +29,13 @@
             }
         }
 
+        &_prev {
+            left: 0;
+        }
+
         &_next {
             transform: rotate(180deg);
+            right: 0;
         }
     }
 
@@ -40,8 +48,10 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
         gap: 20px;
+        padding: 0 77px;
     }
 
     &__item {
@@ -98,6 +108,26 @@
                 position: absolute;
                 inset: 0;
                 background-blend-mode: overlay;
+            }
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+
+        &-item {
+            width: 11px;
+            height: 11px;
+            background-color: var(--secondary-dark);
+            border-radius: 100%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--primary-green);
             }
         }
     }

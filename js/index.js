@@ -1,5 +1,6 @@
 // import { openModal } from "./widgets/modal";
 // openModal();
+
 const modal = document.querySelector('.modal');
 const modalBntOpen = document.querySelector('.modal-open-btn');
 const modalBtnClose = document.querySelector('.modal__close-btn');

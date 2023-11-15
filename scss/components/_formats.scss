@@ -2,5 +2,9 @@
     &__title {
         margin-bottom: 80px;
         text-align: center;
+
+        @media screen and (max-width: $bp-tablet) {
+            margin-bottom: 24px;
+        }
     }
 }
