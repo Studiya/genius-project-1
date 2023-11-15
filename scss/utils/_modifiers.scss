@@ -24,6 +24,10 @@
 
 .limited_340 {
     max-width: 340px;
+
+    @media screen and (max-width: $bp-tablet) {
+        max-width: none;
+    }
 }
 
 .bg-img {

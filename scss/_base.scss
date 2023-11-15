@@ -15,11 +15,16 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
+
+    @media screen and (max-width: $bp-tablet) {
+        font-size: 16px;
+        font-weight: 300;
+    }
 }
 
 section {
     padding: 48px 0 48px;
-    @media screen and (max-width: $bp-mobile) {
+    @media screen and (max-width: $bp-tablet) {
         padding: 20px 0 20px;
     }
 }
@@ -30,7 +35,7 @@ section {
     margin: 0 auto;
     padding: 0 24px;
 
-    @media screen and (max-width: $bp-mobile) {
+    @media screen and (max-width: $bp-tablet) {
         padding: 0 20px;
     }
 }
@@ -46,21 +51,56 @@ address {
 h1 {
     font-weight: 900;
     font-size: 128px;
+
+    @media screen and (max-width: $bp-desktop) {
+        line-height: 1.2;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+        font-size: 87px;
+        line-height: 1.015;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+        font-size: 67px;
+        line-height: 1.015;
+    }
 }
 
 h2 {
     font-weight: 900;
     font-size: 64px;
     line-height: 1.31;
+
+    @media screen and (max-width: $bp-desktop) {
+        font-size: 48px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+        font-size: 32px;
+    }
 }
 
 h3 {
     font-weight: 600;
     font-size: 40px;
+
+    @media screen and (max-width: $bp-desktop) {
+        font-size: 34px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+        font-size: 24px;
+    }
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .grn-btn {
