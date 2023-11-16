@@ -3,65 +3,31 @@
     position: relative;
     text-align: center;
 
-    .carousel__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-        width: 44px;
-        height: 44px;
+    @media screen and (max-width: $bp-tablet) {
         padding: 0;
-        background-color: transparent;
-        border-radius: 50%;
-        border: 1px solid var(--primary-dark);
-        cursor: pointer;
-        position: absolute;
-        top: calc(50% - 22px);
-
-        &:after {
-            display: none;
-        }
-
-        &:hover {
-            background-color: var(--primary-dark);
-
-            .carousel__arrow {
-                fill: var(--primary-light);
-            }
-        }
-
-        &_prev {
-            left: 0;
-        }
-
-        &_next {
-            transform: rotate(180deg);
-            right: 0;
-        }
     }
 
-    &__arrow {
-        width: 16px;
-        height: 16px;
-        fill: var(--primary-dark);
+    &__inner {
+        @media screen and (max-width: $bp-tablet) {
+            max-width: 350px;
+        }
+
+        @media screen and (max-width: $bp-tablet) {
+            max-width: 320px;
+        }
     }
 
     &__item {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         justify-content: flex-end;
         color: var(--primary-light);
-        flex-basis: calc((100% - 40px) / 3);
-        height: 444px;
+        height: 444px !important;
         padding: 24px;
         position: relative;
         background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%);
         border-radius: 16px;
         text-align-last: left;
-
-        @media screen and (max-width: $bp-desktop) {
-            flex-basis: calc((100% - 40px) / 2);
-        }
 
         &-content {
             position: relative;
@@ -109,6 +75,53 @@
         }
     }
 
+    .carousel__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 1px solid var(--primary-dark);
+        cursor: pointer;
+        position: absolute;
+        top: calc(50% - 22px);
+
+        @media screen and (max-width: $bp-mobile) {
+            display: none;
+        }
+
+        &:after {
+            display: none;
+        }
+
+        &:hover {
+            background-color: var(--primary-dark);
+
+            .carousel__arrow {
+                fill: var(--primary-light);
+            }
+        }
+
+        &_prev {
+            left: 0;
+        }
+
+        &_next {
+            transform: rotate(180deg);
+            right: 0;
+        }
+    }
+
+    &__arrow {
+        width: 16px;
+        height: 16px;
+        fill: var(--primary-dark);
+    }
+
     &__pagination {
         display: inline-flex;
         flex-direction: row;
@@ -124,8 +137,10 @@
             border-radius: 100%;
             cursor: pointer;
 
-            &:hover {
-                background-color: var(--primary-green);
+            @media (hover: hover) {
+                &:hover {
+                    background-color: var(--primary-green);
+                }
             }
         }
     }
