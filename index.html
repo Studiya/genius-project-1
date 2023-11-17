@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -47,7 +47,7 @@
       </div>
       <div class="mobile-menu">
         <button class="mobile-menu__close-btn menu-btn-close" type="button">
-          Close
+          <img src="./assets/imgs/cross.svg" alt="close-btn" />
         </button>
       </div>
     </header>
@@ -413,7 +413,6 @@
           <iframe
             class="contacts__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1638712576287!2d30.48865857600307!3d50.45667308691644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699171696556!5m2!1suk!2sua"
-            height="595"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -463,17 +462,18 @@
                 href="https://maps.app.goo.gl/SvD66bGZupn16T4t5"
                 target="_blank"
               >
-                Україна, м. Київ, вул. Січових Стрільців 54
+                Україна, м. Київ,<br />
+                вул. Січових Стрільців 54
               </a>
             </li>
-            <li>
+            <li class="footer__soc">
               <a href="#">
                 <svg class="footer__soc-icon">
                   <use href="./assets/imgs/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="footer__soc">
               <a href="#">
                 <svg class="footer__soc-icon">
                   <use href="./assets/imgs/icons.svg#icon-instagram"></use>
@@ -490,7 +490,9 @@
     </footer>
     <div class="modal call-order hidden">
       <div class="modal__inner call-order__inner">
-        <button class="modal__close-btn" type="button">XXX</button>
+        <button class="modal__close-btn" type="button">
+          <img src="./assets/imgs/cross.svg" alt="close-btn" />
+        </button>
         <div class="call-order__content">
           <div class="call-order__title">
             <h2>Замовити дзвінок</h2>

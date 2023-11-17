@@ -2,12 +2,15 @@
 // openModal();
 
 const modal = document.querySelector('.modal');
-const modalBntOpen = document.querySelector('.modal-open-btn');
+const modalBntsOpen = Array.from(document.querySelectorAll('.modal-open-btn'));
 const modalBtnClose = document.querySelector('.modal__close-btn');
 
-const toogleBtn = () => modal.classList.toggle('is-hidden');
+const toogleBtn = () => modal.classList.toggle('hidden');
 
-modalBntOpen.addEventListener('click', toogleBtn);
+for (let i = 0; i < modalBntsOpen.length; i++) {
+  console.log(modalBntsOpen[i])
+  modalBntsOpen[i].addEventListener('click', toogleBtn);
+}
 modalBtnClose.addEventListener('click', toogleBtn);
 
 const mobileMenu = document.querySelector('.mobile-menu');

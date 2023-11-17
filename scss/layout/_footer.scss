@@ -87,13 +87,20 @@
         color: var(--secondary-dark);
     }
 
-    &__soc-icon {
-        width: 32px;
-        height: 32px;
-        fill: var(--primary-light);
+    &__soc {
+        display: inline-block;
 
-        &:hover {
-            fill: var(--primary-green);
+        &:not(:last-child) {
+            margin-right: 18px;
+        }
+        &-icon {
+            width: 32px;
+            height: 32px;
+            fill: var(--primary-light);
+
+            &:hover {
+                fill: var(--primary-green);
+            }
         }
     }
 }
