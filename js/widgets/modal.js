@@ -1,6 +1,4 @@
 function openModal() {
-  console.log('hi');
-
   const modal = document.querySelector('.modal');
   const modalBntsOpen = document.querySelectorAll('.modal-open-btn');
   const modalBtnClose = document.querySelector('.modal__close-btn');
