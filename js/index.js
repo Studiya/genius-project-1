@@ -1,17 +1,5 @@
-// import { openModal } from "./widgets/modal";
-// openModal();
-
-const modal = document.querySelector('.modal');
-const modalBntsOpen = Array.from(document.querySelectorAll('.modal-open-btn'));
-const modalBtnClose = document.querySelector('.modal__close-btn');
-
-const toogleBtn = () => modal.classList.toggle('hidden');
-
-for (let i = 0; i < modalBntsOpen.length; i++) {
-  console.log(modalBntsOpen[i])
-  modalBntsOpen[i].addEventListener('click', toogleBtn);
-}
-modalBtnClose.addEventListener('click', toogleBtn);
+import { openModal, openMenuMobile } from './widgets/index.js';
+openModal();
 
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuBtnOpen = document.querySelector('.menu-btn-open');
@@ -24,21 +12,21 @@ menyBtnClose.addEventListener('click', toogleMenu);
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-    // loop: true,
-    slidesPerView: 1,
+  // loop: true,
+  slidesPerView: 1,
   spaceBetween: 10,
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
     768: {
       slidesPerView: 2,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     // when window width is >= 480px
     1279: {
       slidesPerView: 3,
-      spaceBetween: 20
-    }
+      spaceBetween: 20,
+    },
   },
 
   // If we need pagination
