@@ -121,27 +121,4 @@
         height: 16px;
         fill: var(--primary-dark);
     }
-
-    &__pagination {
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 24px;
-        margin-top: 32px;
-
-        &-item {
-            width: 11px;
-            height: 11px;
-            background-color: var(--secondary-dark);
-            border-radius: 100%;
-            cursor: pointer;
-
-            @media (hover: hover) {
-                &:hover {
-                    background-color: var(--primary-green);
-                }
-            }
-        }
-    }
 }

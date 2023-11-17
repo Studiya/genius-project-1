@@ -1,0 +1,21 @@
+.pagination {
+    width: auto !important;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-top: 32px;
+
+    &__button {
+        width: 11px;
+        height: 11px;
+        background-color: var(--secondary-dark);
+        border-radius: 100%;
+        cursor: pointer;
+
+        &_active {
+            background-color: var(--primary-green);
+        }
+    }
+}
