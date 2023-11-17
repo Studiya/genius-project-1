@@ -17,6 +17,14 @@
         width: 179px;
         height: 121px;
         background-image: url(../../assets/imgs/bg-bread-left.png);
+
+        @media screen and (max-width: $bp-mobile) {
+            bottom: auto;
+            top: 60px;
+            width: 92px;
+            height: 196px;
+            background-image: url(../../assets/imgs/m-bg-bread-left.png);
+        }
     }
 
     &:after {
@@ -25,6 +33,16 @@
         width: 378px;
         height: 187px;
         background-image: url(../../assets/imgs/bg-bread-right.png);
+
+        @media screen and (max-width: $bp-tablet) {
+            width: 290px;
+        }
+
+        @media screen and (max-width: $bp-mobile) {
+            width: 86px;
+            height: 82px;
+            background-image: url(../../assets/imgs/m-bg-bread-right.png);
+        }
     }
 
     .wrapper {
@@ -32,6 +50,15 @@
         flex-direction: row;
         justify-content: space-between;
         gap: 40px;
+
+        @media screen and (max-width: $bp-tablet) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @media screen and (max-width: $bp-mobile) {
+            gap: 0;
+        }
 
         & > * {
             flex-grow: 1;
@@ -48,13 +75,29 @@
     }
 
     &__logo {
+        @media screen and (max-width: $bp-mobile) {
+            margin-bottom: 32px;
+        }
+
         a {
             display: inline-block;
         }
+
+        img {
+            @media screen and (max-width: $bp-mobile) {
+                width: 72px;
+            }
+        }
     }
 
-    &__nav-item:not(:last-child) {
-        margin-bottom: 16px;
+    &__nav {
+        @media screen and (max-width: $bp-mobile) {
+            margin-bottom: 18px;
+        }
+
+        &-item:not(:last-child) {
+            margin-bottom: 16px;
+        }
     }
 
     &__address {
@@ -63,8 +106,21 @@
         justify-content: space-between;
         gap: 40px;
 
+        @media screen and (max-width: $bp-tablet) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @media screen and (max-width: $bp-mobile) {
+            gap: 8px;
+        }
+
         &-list {
             max-width: 211px;
+
+            @media screen and (max-width: $bp-tablet) {
+                max-width: none;
+            }
         }
 
         &-link {
@@ -79,6 +135,10 @@
         a {
             display: inline-block;
             margin-bottom: 16px;
+
+            @media screen and (max-width: $bp-mobile) {
+                margin-bottom: 8px;
+            }
         }
     }
 
