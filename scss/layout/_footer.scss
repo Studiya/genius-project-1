@@ -1,6 +1,6 @@
 .footer {
     padding: 32px 0 32px;
-    background-image: url(../../assets/imgs/footer.jpg);
+    background-image: url(../../assets/imgs/footer.webp);
     position: relative;
 
     &:before,
@@ -16,14 +16,14 @@
         bottom: 0;
         width: 179px;
         height: 121px;
-        background-image: url(../../assets/imgs/bg-bread-left.png);
+        background-image: url(../../assets/imgs/bg-bread-left.webp);
 
         @media screen and (max-width: $bp-mobile) {
             bottom: auto;
             top: 60px;
             width: 92px;
             height: 196px;
-            background-image: url(../../assets/imgs/m-bg-bread-left.png);
+            background-image: url(../../assets/imgs/m-bg-bread-left.webp);
         }
     }
 
@@ -32,7 +32,7 @@
         bottom: 0;
         width: 378px;
         height: 187px;
-        background-image: url(../../assets/imgs/bg-bread-right.png);
+        background-image: url(../../assets/imgs/bg-bread-right.webp);
 
         @media screen and (max-width: $bp-tablet) {
             width: 290px;
@@ -41,7 +41,7 @@
         @media screen and (max-width: $bp-mobile) {
             width: 86px;
             height: 82px;
-            background-image: url(../../assets/imgs/m-bg-bread-right.png);
+            background-image: url(../../assets/imgs/m-bg-bread-right.webp);
         }
     }
 
