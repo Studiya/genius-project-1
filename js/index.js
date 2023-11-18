@@ -1,4 +1,8 @@
-import { openModal, openMenuMobile, initSwiper } from './widgets/index.js';
+import openModal from './widgets/modal.js';
+import { toggleMenuMobile, closeMenuMobile } from './widgets/menuMobile.js';
+import initSwiper from './widgets/swiper.js';
+
 openModal();
-openMenuMobile();
+toggleMenuMobile();
+closeMenuMobile();
 initSwiper();

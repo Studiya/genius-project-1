@@ -4,17 +4,19 @@
         max-height: 880px;
         padding: 128px 128px 187px;
         overflow-y: auto;
-    }
 
-    // &__content {
-    //     max-height: 100%;
-    //     padding-bottom: 187px;
-    //     overflow-y: auto;
-    // }
+        @media screen and (max-width: $bp-tablet) {
+            padding: 60px 10px;
+        }
+    }
 
     &__title {
         text-align: center;
         margin-bottom: 72px;
+
+        @media screen and (max-width: $bp-tablet) {
+            margin-bottom: 24px;
+        }
 
         h2 {
             margin-bottom: 8px;

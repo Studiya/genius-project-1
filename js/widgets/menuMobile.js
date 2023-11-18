@@ -1,12 +1,21 @@
-function openMenuMobile() {
+export function toggleMenuMobile() {
   const mobileMenu = document.querySelector('.mobile-menu');
-  const menuBtnOpen = document.querySelector('.menu-btn-open');
-  const menyBtnClose = document.querySelector('.menu-btn-close');
+  const menuOpenBtn = document.querySelector('.menu-btn-open');
+  const menyCloseBtn = document.querySelector('.menu-btn-close');
 
-  const toogleMenu = () => mobileMenu.classList.toggle('is-open');
+  const toggleMenu = () => mobileMenu.classList.toggle('is-open');
 
-  menuBtnOpen.addEventListener('click', toogleMenu);
-  menyBtnClose.addEventListener('click', toogleMenu);
+  menuOpenBtn.addEventListener('click', toggleMenu);
+  menyCloseBtn.addEventListener('click', toggleMenu);
 }
 
-export default openMenuMobile;
+export function closeMenuMobile() {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const menuNavLinks = document.querySelectorAll('.mobile-menu__nav-link');
+
+  const toggleMenu = () => mobileMenu.classList.toggle('is-open');
+
+  for (let i = 0; i < [...menuNavLinks].length; i++) {
+    menuNavLinks[i].addEventListener('click', toggleMenu);
+  }
+}

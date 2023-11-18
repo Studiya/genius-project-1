@@ -1,0 +1,82 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-light);
+    transform: translateX(100%);
+    transition: transform 0.4s;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    &__wrapper {
+        padding: 30px;
+
+        @media screen and (max-width: $bp-mobile) {
+            padding: 16px 24px;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 32px;
+
+        svg {
+            width: 114px;
+            height: 56px;
+            fill: var(--primary-dark) !important;
+
+            @media screen and (max-width: $bp-mobile) {
+                width: 72px;
+                height: 38px;
+            }
+        }
+    }
+
+    &__close-btn {
+        position: absolute;
+        inset: 40px 40px auto auto;
+        background-color: transparent;
+        border: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+
+        @media screen and (max-width: $bp-mobile) {
+            inset: 16px 24px auto auto;
+            width: 24px;
+            height: 24px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__nav {
+        @media screen and (max-width: $bp-mobile) {
+            font-size: 14px;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        &-link {
+            color: var(--primary-dark);
+
+            &:hover,
+            &:active {
+                color: var(--primary-green);
+                font-weight: 600;
+            }
+        }
+    }
+}

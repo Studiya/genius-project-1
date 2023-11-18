@@ -1,6 +1,7 @@
 .call-order-form {
     &__block {
         margin-bottom: 32px;
+        text-align: center;
 
         @media screen and (max-width: $bp-mobile) {
             margin-bottom: 16px;
@@ -14,6 +15,10 @@
         border: 1px solid var(--secondary-dark);
         border-radius: 8px;
         font-size: 16px;
+
+        @media screen and (max-width: $bp-tablet) {
+            max-width: 440px;
+        }
 
         @media screen and (max-width: $bp-mobile) {
             padding: 8px 24px;

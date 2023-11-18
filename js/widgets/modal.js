@@ -1,14 +1,14 @@
 function openModal() {
   const modal = document.querySelector('.modal');
-  const modalBntsOpen = document.querySelectorAll('.modal-open-btn');
-  const modalBtnClose = document.querySelector('.modal__close-btn');
+  const modalOpenBtns = document.querySelectorAll('.modal-open-btn');
+  const modalCloseBtn = document.querySelector('.modal__close-btn');
 
   const toogleBtn = () => modal.classList.toggle('hidden');
 
-  for (let i = 0; i < [...modalBntsOpen].length; i++) {
-    modalBntsOpen[i].addEventListener('click', toogleBtn);
+  for (let i = 0; i < [...modalOpenBtns].length; i++) {
+    modalOpenBtns[i].addEventListener('click', toogleBtn);
   }
-  modalBtnClose.addEventListener('click', toogleBtn);
+  modalCloseBtn.addEventListener('click', toogleBtn);
 }
 
 export default openModal;
