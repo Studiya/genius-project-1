@@ -2,7 +2,6 @@
     &__inner {
         max-width: 880px;
         max-height: 880px;
-        padding: 128px 128px 187px;
         overflow-y: auto;
 
         @media screen and (max-width: $bp-tablet) {

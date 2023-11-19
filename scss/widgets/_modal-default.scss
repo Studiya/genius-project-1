@@ -11,12 +11,18 @@
         opacity 0.3s,
         visibility 0.3s;
 
+    &__wrapper {
+        position: relative;
+        height: 100%;
+    }
+
     &__inner {
         position: relative;
         background-color: var(--primary-light);
         border-radius: 32px;
         width: 100%;
         height: 100%;
+        padding: 128px 128px;
     }
 
     &__close-btn {
